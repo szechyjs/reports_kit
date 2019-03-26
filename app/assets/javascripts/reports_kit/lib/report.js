@@ -60,14 +60,10 @@ ReportsKit.Report = (function() {
 
   self.initializeDateRangePickers = function() {
     self.form.find('.date_range_picker').daterangepicker({
-      opens: 'left',
       drops: 'down',
       showDropdowns: false,
       showWeekNumbers: false,
       timePicker: false,
-      buttonClasses: ['btn', 'btn-sm'],
-      applyClass: 'btn-primary btn-daterange-submit',
-      cancelClass: 'btn-default',
       maxDate: moment(),
       locale: {
         format: 'MMM D, YYYY'
